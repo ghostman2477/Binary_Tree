@@ -1,0 +1,11 @@
+//Recursive pre order traversal in Binary tree
+
+public void preOrder(TreeNode root) {
+		if(root == null) {
+			return;
+		}
+
+		System.out.print(root.data + " ");
+		preOrder(root.left);
+		preOrder(root.right);
+	}
