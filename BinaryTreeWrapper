@@ -14,6 +14,16 @@ public class BinaryTree {
 		}
 	}
 	
+	public void preOrder(TreeNode root) {
+		if(root == null) {
+			return;
+		}
+
+		System.out.print(root.data + " ");
+		preOrder(root.left);
+		preOrder(root.right);
+	}
+	
 	public void createBinaryTree() {
 		TreeNode first = new TreeNode(1);
 		TreeNode second = new TreeNode(2);
